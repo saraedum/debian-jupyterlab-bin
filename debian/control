@@ -1,0 +1,20 @@
+Source: jupyterlab
+Section: python
+Priority: optional
+Maintainer: Julian Rüth <julian.rueth@fsfe.org>
+Build-Depends: debhelper (>= 10), dh-python, python3-all, python3-setuptools, jupyter-notebook, python3-notebook, nodejs
+Standards-Version: 4.1.2
+Homepage: https://github.com/jupyterlab/jupyterlab
+X-Python-Version: >= 2.6
+X-Python3-Version: >= 3.2
+Vcs-Git: https://github.com/jupyterlab/jupyterlab.git
+Vcs-Browser: https://github.com/jupyterlab/jupyterlab
+Testsuite: autopkgtest-pkg-python
+
+Package: python3-jupyterlab
+Architecture: all
+Depends: ${python3:Depends}, ${misc:Depends}, python3-notebook, python3-jupyterlab-launcher, jupyter-notebook, python3-notebook
+Description: JupyterLab is the next-generation user interface for Project Jupyter (Python 3)
+ An extensible environment for interactive and reproducible computing, based on the Jupyter Notebook and Architecture.
+ .
+ This package installs the library for Python 3.

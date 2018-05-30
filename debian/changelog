@@ -1,0 +1,7 @@
+jupyterlab (0.32.1-1~1.gbpe77686) UNRELEASED; urgency=medium
+
+  ** SNAPSHOT build @e7768610ca2906ec81f66bfc733d0fbc4bd512bb **
+
+  * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
+
+ -- Julian Rüth <julian.rueth@fsfe.org>  Wed, 30 May 2018 23:33:16 +0000

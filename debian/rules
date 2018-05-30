@@ -1,0 +1,11 @@
+#!/usr/bin/make -f
+export PYBUILD_NAME=jupyterlab
+export PYBUILD_INSTALL_ARGS="--skip-npm"
+# Debian's notebook does not contain the test package so we can not run the
+# tests.
+# Building is not necessary as the orig tarball already contains the built
+# webpack bundles.
+export PYBUILD_DISABLE=build test
+
+%:
+	dh $@ --with python3 --buildsystem=pybuild
